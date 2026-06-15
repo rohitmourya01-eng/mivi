@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyBank</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f7fb;
+        }
+
+        /* Header */
+        header{
+            background:#003366;
+            color:white;
+            padding:15px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        header h1{
+            font-size:30px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            color:lightblue;
+        }
+
+        /* Hero Section */
+        .hero{
+            height:400px;
+            background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            text-align:center;
+        }
+
+        .hero-content h2{
+            font-size:45px;
+            margin-bottom:15px;
+        }
+
+        .hero-content p{
+            font-size:20px;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            padding:12px 25px;
+            background:#007bff;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            background:#0056b3;
+        }
+
+        /* Services */
+        .services{
+            padding:50px 20px;
+            text-align:center;
+        }
+
+        .services h2{
+            margin-bottom:40px;
+            color:#003366;
+            font-size:35px;
+        }
+
+        .service-box{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:300px;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3{
+            color:#007bff;
+            margin-bottom:15px;
+        }
+
+        .card p{
+            color:#555;
+        }
+
+        /* Login Section */
+        .login{
+            background:white;
+            width:350px;
+            margin:40px auto;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .login h2{
+            text-align:center;
+            margin-bottom:20px;
+            color:#003366;
+        }
+
+        .login input{
+            width:100%;
+            padding:12px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        .login button{
+            width:100%;
+        }
+
+        /* Footer */
+        footer{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>MyBank</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Accounts</a>
+            <a href="#">Loans</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to MyBank</h2>
+            <p>Safe, Secure and Fast Banking Services</p>
+            <button class="btn">Open Account</button>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="service-box">
+
+            <div class="card">
+                <h3>Savings Account</h3>
+                <p>Secure your money with high interest savings accounts.</p>
+            </div>
+
+            <div class="card">
+                <h3>Loans</h3>
+                <p>Get personal, home and business loans with low interest.</p>
+            </div>
+
+            <div class="card">
+                <h3>Online Banking</h3>
+                <p>Manage your account anytime anywhere with internet banking.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Login Form -->
+    <section class="login">
+        <h2>Customer Login</h2>
+
+        <form>
+            <input type="text" placeholder="Enter Username" required>
+
+            <input type="password" placeholder="Enter Password" required>
+
+            <button class="btn">Login</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MyBank. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
